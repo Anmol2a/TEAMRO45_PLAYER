@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TG - @Teamrohitoff45</title>
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(145deg, #1b1b1b, #282828);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+    }
+
+    /* Video Player */
+    #video {
+      width: 100%;
+      height: 60%;
+      max-width: 900px;
+      background: #000;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center; /* Centers the video player */
+      align-items: center; /* Ensures the video is centered */
+    }
+
+    /* Advertising Banner */
+    .ad-banner {
+      width: 100%;
+      max-width: 900px;
+      height: 120px;
+      margin-top: 20px;
+    }
+
+    .ad-banner a {
+      display: block;
+      width:  100%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .ad-banner img {
+      width: 100%;
+      height: 200%;
+      object-fit: cover; /* Fully fits the banner without leaving space */
+      border-radius: 0;  /* No border radius */
+    }
+
+    /* New Button under the Banner */
+    .banner-button {
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .banner-button button {
+      background-color: #ff0000; /* Red background */
+      color: #ffffff; /* White text */
+      border: none;
+      width: 220px;
+      height: 60px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .banner-button button:hover {
+      background-color: #cc0000; /* Darker red on hover */
+      transform: scale(1.05);
+    }
+
+    /* Popup Overlay */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s;
+    }
+
+    .popup-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+    }
+
+    .popup h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      color: #0074d9;
+    }
+
+    .popup a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .popup button {
+      background-color: #0074d9;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .popup button:hover {
+      background-color: #005bb5;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Player -->
+  <div id="video"></div>
+
+  <!-- Advertising Banner -->
+  <div class="ad-banner">
+    <a href="https://t.me/+33IHK7BHR14xY2I1" target="_blank">
+      <img src="https://i.postimg.cc/65Nt9f6x/IMG-20250111-190825-847.jpg" alt="Advertise Here">
+    </a>
+  </div>
+
+  <!-- New Button under the Banner -->
+  <div class="banner-button">
+    <button onclick="window.location.href='https://t.me/+33IHK7BHR14xY2I1'">LIVE STREAM CHAMPION TROPHY</button>
+  </div>
+<!-- Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <h2>Join Our Telegram Channel</h2>
+      <p>Get More Live Links <a href="https://t.me/+33IHK7BHR14xY2I1" target="_blank">@TEAMROHITOFF45</a>.</p>
+      <button onclick="openTelegram()">Join Now</button>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    //<!--
+const _0x1a6198=_0x32bc;(function(_0x1035c6,_0x355998){const _0x851b6a=_0x32bc,_0x31b395=_0x1035c6();while(!![]){try{const _0x4e013d=parseInt(_0x851b6a(0xbe))/(0x3f*-0x8e+0x141e+0xed5)*(-parseInt(_0x851b6a(0xd3))/(0xe71*-0x1+-0x242e+0x32a1))+-parseInt(_0x851b6a(0xbb))/(-0x9*0x363+-0x7f2*0x1+-0x267*-0x10)*(-parseInt(_0x851b6a(0xc3))/(-0x1870+0x6c9+0x11ab))+-parseInt(_0x851b6a(0xc8))/(-0x8*-0xb8+0x21f8+-0x27b3)+parseInt(_0x851b6a(0xc1))/(-0x1*-0x14ea+-0x8*0x30e+-0x4*-0xe3)*(-parseInt(_0x851b6a(0xd1))/(-0x6*-0x192+0x1d3*0x15+0x47*-0xac))+-parseInt(_0x851b6a(0xcc))/(0x25bb*-0x1+-0x845*-0x2+0x1*0x1539)+-parseInt(_0x851b6a(0xc6))/(0x2276+-0xf28+0x1345*-0x1)*(parseInt(_0x851b6a(0xc9))/(0x15e6+-0x1a65+0x489))+parseInt(_0x851b6a(0xb9))/(0x1f7+-0x1477*-0x1+-0x1663);if(_0x4e013d===_0x355998)break;else _0x31b395['push'](_0x31b395['shift']());}catch(_0x26df3a){_0x31b395['push'](_0x31b395['shift']());}}}(_0x1b35,-0x50fc*0x3+0x30e4e+0x726d9*0x1));function _0x32bc(_0x49d216,_0x5134c0){const _0x286c40=_0x1b35();return _0x32bc=function(_0x2e56de,_0x345ffb){_0x2e56de=_0x2e56de-(-0xc3a+-0x2252+0x2f42*0x1);let _0x3eeea1=_0x286c40[_0x2e56de];return _0x3eeea1;},_0x32bc(_0x49d216,_0x5134c0);}function getVideoUrlFromDomain(){const _0x5121f5=_0x32bc,_0x333a78={'GKdUL':_0x5121f5(0xd4)},_0x34844e=new URLSearchParams(window[_0x5121f5(0xd0)][_0x5121f5(0xc0)]);return _0x34844e[_0x5121f5(0xce)](_0x333a78[_0x5121f5(0xba)]);}jwplayer(_0x1a6198(0xb6))[_0x1a6198(0xd6)]({'width':_0x1a6198(0xd7),'height':_0x1a6198(0xd7),'autostart':!![],'mute':![],'file':getVideoUrlFromDomain()});const popupOverlay=document[_0x1a6198(0xbd)+_0x1a6198(0xbc)](_0x1a6198(0xb8)+'ay');function openTelegram(){const _0x873422=_0x1a6198,_0x252de3={'DQrdp':_0x873422(0xbf)+_0x873422(0xb7)+_0x873422(0xd5)};window[_0x873422(0xd0)][_0x873422(0xc5)]=_0x252de3[_0x873422(0xd2)];}function closePopup(){const _0x3ca0a6=_0x1a6198,_0x1166d8={'bzaxY':_0x3ca0a6(0xca)};popupOverlay[_0x3ca0a6(0xc7)][_0x3ca0a6(0xcb)](_0x1166d8[_0x3ca0a6(0xcf)]);}window[_0x1a6198(0xc2)]=()=>{const _0x4bb116=_0x1a6198,_0x2b423d={'ZTOvw':_0x4bb116(0xca)};popupOverlay[_0x4bb116(0xc7)][_0x4bb116(0xc4)](_0x2b423d[_0x4bb116(0xcd)]);};function _0x1b35(){const _0x1c9dc5=['videoUrl','7BHR14xY2I1','setup','100%','video','me/+33IHK','popupOverl','31582012UTkguH','GKdUL','1685415pUFwza','ById','getElement','34zNYdis','https://t.','search','1089894WoEQDo','onload','8RLudpQ','add','href','9865143TNctgR','classList','2090900ePvJBr','10umyiSr','active','remove','4968072SmeUya','ZTOvw','get','bzaxY','location','7aokmsO','DQrdp','62998HqSwcR'];_0x1b35=function(){return _0x1c9dc5;};return _0x1b35();}
+//-->
+
+  </script>
+</body>
+</html>
